@@ -29,7 +29,7 @@ const ProductTable: FC<ProductTableProps> = ({ onItemClick, selectedRows }) => {
                 dataSource={products}
                 columns={productColumns()}
                 pagination={false}
-                scroll={{y: '75vh'}}
+                scroll={{y: '70vh'}}
                 rowSelection={{
                     selectedRowKeys: selectedRows.map((row) => row.key),
                     onChange: (_, selectedRows: TProductItems[]) => {
